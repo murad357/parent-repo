@@ -8,16 +8,11 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-    #- name: print commit message
-      #run: echo ${{ secrets.SSH_PRIVATE_KEY }} | sed 's/./& /g'
     - name: repo-sync
       uses: wei/git-sync@v2
       with:
         source_repo: "https://github.com/murad357/parent-repo.git"
         source_branch: "development"
-        #destination_repo: "https://5c9744489892ea8c2c2db223736c4c35b75be2fc@github.com/murad357/child-repo1.git"
-        #destination_repo: "https://github.com/murad357/child-repo1.git"
-        #destination_repo: "git@github.com:murad357/child-repo1.git"
         destination_repo: "https://murad357:69af923bf78e68719fd9198c25e1dc7613dbd3c0@github.com/murad357/child-repo1.git"
         destination_branch: "development"
         #ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
