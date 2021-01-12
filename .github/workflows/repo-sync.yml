@@ -5,14 +5,12 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-    - name: print commit message
-      run: echo commit message ${{ secrets.SSH_PRIVATE_KEY }}
     - name: repo-sync
       uses: wei/git-sync@v2
       with:
         source_repo: "https://github.com/murad357/parent-repo.git"
         source_branch: "development"
-        destination_repo: "https://murad357:5c9744489892ea8c2c2db223736c4c35b75be2fc@github.com/murad357/child-repo1.git"
+        destination_repo: "https://5c9744489892ea8c2c2db223736c4c35b75be2fc@github.com/murad357/child-repo1.git"
         #destination_repo: "https://github.com/murad357/child-repo1.git"
         destination_branch: "development"
         #ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
