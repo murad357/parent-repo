@@ -8,8 +8,8 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-    - name: print commit message
-      run: echo ${{ secrets.SSH_PRIVATE_KEY }} | sed 's/./& /g'
+    #- name: print commit message
+      #run: echo ${{ secrets.SSH_PRIVATE_KEY }} | sed 's/./& /g'
     - name: repo-sync
       uses: wei/git-sync@v2
       with:
