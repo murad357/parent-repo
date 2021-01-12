@@ -11,8 +11,8 @@ jobs:
     - name: repo-sync
       uses: wei/git-sync@v2
       with:
-        source_repo: "https://github.com/murad357/parent-repo.git"
+        source_repo: "parent-repo"
         source_branch: "development"
-        destination_repo: "https://murad357:69af923bf78e68719fd9198c25e1dc7613dbd3c0@github.com/murad357/child-repo1.git"
+        destination_repo: "child-repo1"
         destination_branch: "development"
-        #ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
