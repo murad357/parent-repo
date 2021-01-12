@@ -8,7 +8,7 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-    - name: repo-sync
+    - name: repo-sync-lms
       uses: wei/git-sync@v2
       with:
         source_repo: "https://github.com/murad357/parent-repo.git"
