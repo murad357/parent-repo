@@ -1,9 +1,6 @@
 # File: .github/workflows/repo-sync.yml
 
-on: 
-  push:
-    branches: [ development ]
-
+on: push
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
@@ -15,4 +12,4 @@ jobs:
         source_branch: "development"
         destination_repo: "https://murad357:51bcc29a835ad40b76a4a1e1a58b0a521ec3bf37@github.com/murad357/child-repo1.git"
         destination_branch: "development"
-        #ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        # ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
