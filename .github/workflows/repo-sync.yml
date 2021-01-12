@@ -13,6 +13,6 @@ jobs:
       with:
         source_repo: "https://github.com/murad357/parent-repo.git"
         source_branch: "development"
-        destination_repo: "https://murad357:a98d55d3aaeb0dffc8d04a116c49e63b331b3b96@github.com/murad357/child-repo1.git"
+        destination_repo: "https://murad357:1cac3bd3b4731e79593653a3df68de2ce6d6a3e0@github.com/murad357/child-repo1.git"
         destination_branch: "development"
         #ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
