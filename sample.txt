@@ -8,4 +8,4 @@ last repo should have 0 deploy key 2 secrets
 and git-sync action is run on the last repo to sync repo 1 to repo 2
 
 in summary, the source and destination repo will have deploy key with public key info (2 separate keys)
-Third repo will hold the 2 secret keys. No deploy key. Tested3.
+Third repo will hold the 2 secret keys. No deploy key. Tested4.
